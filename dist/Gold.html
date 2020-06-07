@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+
+  <body>
+    <h1 class="title">Castle Siege 3</h1>
+    <input type="text" id="row" placeholder="enter number of rows" />
+    <input type="text" id="col" placeholder="enter number of columns" />
+    <button type="button" id="start">start</button>
+    <div class="scores"></div>
+    <script id="scores-template" type="text/x-handlebars-template">
+            {{ scores}}
+            <div class="user-scores">
+      <span class="player1">Player 1 score: {{1}}/</span>
+            <span class="player2">Player 2 score: {{2}}</span>
+
+            </div>
+
+
+            </div>
+    </script>
+    <div class="show"></div>
+
+    <script id="game-template" type="text/x-handlebars-template">
+
+              {{#each goldRush}}
+              <div class="matrix-data">
+                        {{#each this}}
+                        {{#iff this '==' '*'}}
+                        <!-- <div class="row"><img class="img" src="https://img.icons8.com/material-outlined/24/000000/fork.png" class="img"/></div> -->
+                        <div class = "row" >
+      <i class="fab fa-sketch"></i>
+                        </div>
+                        {{/iff}}
+
+                         {{#iff this '==' '1'}}
+                         <div class="row"><i class="fas fa-dragon" ></i></div>
+                          {{/iff}}
+                          {{#iff this '==' '2'}}
+                          <div class="row"><i class="fas fa-chess-knight"></i></div>
+                           {{/iff}}
+                           {{#iff this '==' '.'}}
+                           <div class="row">
+                             <i class="fas fa-ellipsis-h"></i>
+                           </div>
+
+                         {{/iff}}
+                         {{#iff this '==' '#'}}
+                         <div class="row"><i class="fab fa-fort-awesome"></i></div>
+                          {{/iff}}
+                         {{/each}}
+
+
+
+                  {{/each}}
+              </div>
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.min.js"></script>
+
+    <script src="Renderer.js"></script>
+    <script src="GoldRush.js"></script>
+    <script src="Matrix.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

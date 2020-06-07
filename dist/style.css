@@ -1,0 +1,148 @@
+html {
+  background-color: antiquewhite;
+}
+
+h1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#start input {
+  border: 2;
+  color: rgb(84, 109, 184);
+  cursor: pointer;
+  font-size: 20px;
+
+}
+
+.user-scores {
+  font-size: xx-large;
+  font-weight: bold;
+  font-family: 'Trebuchet MS',
+    'Lucida Sans Unicode',
+    'Lucida Grande',
+    'Lucida Sans',
+    Arial,
+    sans-serif;
+}
+
+.show {
+  display: inline-block;
+  width: fit-content;
+  /* padding: 10px; */
+  background-color: white;
+  border: 1px solid #0f1920;
+  box-shadow: 1px 1px 10px #2c3e50;
+  cursor: pointer;
+
+}
+
+
+.row {
+  /* align-content: space-around; */
+  display: inline-block;
+
+  align-items: stretch;
+  justify-content: space-evenly;
+  justify-self: auto;
+  /* display: inline-block; */
+  /* background-color: rgb(243, 234, 234); */
+  background-color: white;
+  /* opacity: 0.1; */
+  height: 100px;
+  width: 100px;
+  /* font-size:10px; */
+  /* padding: 1px; */
+  color: black;
+  /* margin-right: 20px;
+    margin-left: 20px;
+   margin-top: 20px;
+   margin-bottom: 20px; */
+}
+
+.matrix-data {
+
+  /* justify-content: center; */
+}
+
+.img {
+  height: 100px;
+  width: 100px;
+  opacity: 0.9;
+  font: 100px;
+  align-content: center;
+  justify-content: center;
+  /* margin-left: 35px;
+ margin-top: 35px; */
+  align-items: center;
+
+
+}
+
+/* i.material-icons{
+    font: 100px;
+
+        height: 100px;
+        width: 100px;
+        opacity: 0.9;
+        align-content: center;
+        justify-content: center;
+        /* margin-left: 35px;
+ margin-top: 35px; */
+align-items: center;
+}
+
+*/ .fa-bank .material-icons {
+  opacity: 0.9;
+  align-content: center;
+  justify-content: center;
+  /* margin-left: 35px;
+margin-top: 35px; */
+  align-items: center;
+  height: 100px;
+  width: 100px;
+}
+
+.fas {
+  margin-top: 30px;
+  margin-left: 20px;
+  opacity: 0.9;
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  font-size: 60px;
+  color: lightblue;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.fab {
+  margin-top: 30px;
+  margin-left: 20px;
+  opacity: 0.9;
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  font-size: 60px;
+  color: rgb(48, 11, 16);
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.fa-sketch {
+  margin-top: 30px;
+  margin-left: 20px;
+  opacity: 0.9;
+  height: 60px;
+  width: 60px;
+  /* background-color: goldenrod; */
+  font-size: 60px;
+  color: goldenrod;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.fa-ellipsis-h {
+  opacity: 0.1;
+
+}
+
+.fa-dragon {
+  color: crimson;
+}
